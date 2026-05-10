@@ -1,4 +1,4 @@
-# ContextAgent
+![ContextAgent logo](src/context_agent/ui/static/assets/logo.png) # ContextAgent
 
 **ContextAgent** is a **local‑first, CPU‑friendly Retrieval‑Augmented Generation (RAG) agent** designed to help individuals and teams **query and reason over private knowledge bases** stored as documents.
 
