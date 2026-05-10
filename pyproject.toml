@@ -1,0 +1,29 @@
+# Build configuration for pip (required for editable installs)
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# ----------------------------------------------------------------------
+# Project metadata
+# ----------------------------------------------------------------------
+[project]
+# PyPI / distribution name (kebab-case is standard)
+name = "context-agent"
+version = "0.1.0"
+
+# ----------------------------------------------------------------------
+# setuptools configuration (src/ layout)
+# ----------------------------------------------------------------------
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+# Discover packages under src/
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ----------------------------------------------------------------------
+# Notes
+# ----------------------------------------------------------------------
+# - Root Python package: context-agent
+# - Import style: from context-agent.<module> import ...
+# - Editable install: pip install -e .

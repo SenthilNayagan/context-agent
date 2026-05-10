@@ -1,0 +1,18 @@
+# Exclude the vector index directory from version control, as it contains large generated files that can be recreated from source data.
+/vector_index/
+.vector_build/
+
+# Exclude venv directories, which contain environment-specific dependencies and can be recreated using requirements.txt files.
+venv/
+
+# Python packaging metadata
+*.egg-info/
+
+# Python bytecode
+__pycache__/
+
+# VS Code settings
+.vscode/
+
+# Exclude docs directory
+docs/
